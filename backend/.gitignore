@@ -1,0 +1,45 @@
+# ── Secrets (never commit) ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Python bytecode / packaging ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Testing / coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ── Runtime data (users, passwords, tokens, tracked games) ────────────────────
+data/*.json
+
+# Keep the folder in git; JSON files are created locally at runtime
+!data/.gitkeep
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
