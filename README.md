@@ -161,7 +161,3 @@ These files are **not** committed (see `.gitignore`):
 - `backend/data/*.json` — users, tracked games, tokens, price cache
 
 On first run, the backend creates JSON files under `backend/data/`.
-
-## License
-
-Personal / portfolio project. Add a license file if you plan to open-source under specific terms.
