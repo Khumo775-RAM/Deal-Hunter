@@ -142,16 +142,20 @@ flutter analyze
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/deals/` | List game deals |
-| GET | `/search/` | Search games |
-| GET | `/games/{game_id}` | Game details + store prices |
-| GET | `/track/` | List tracked games (auth) |
-| POST | `/track/` | Track a game (auth) |
-| DELETE | `/track/{game_id}` | Stop tracking (auth) |
-| POST | `/auth/register` | Create account |
-| POST | `/auth/login` | Login (returns JWT) |
-| POST | `/auth/forgot-password` | Request password reset email |
-| PATCH | `/auth/notifications` | Toggle email alerts |
+| GET | `/deals/` | Retrieve available game deals |
+| GET | `/search/` | Search for games |
+| GET | `/games/{game_id}` | Retrieve game details and store prices |
+| GET | `/track/` | Retrieve the user's tracked games (authentication required) |
+| POST | `/track/` | Add a game to the user's watchlist (authentication required) |
+| DELETE | `/track/{game_id}` | Remove a game from the user's watchlist (authentication required) |
+| POST | `/auth/register` | Register a new user account |
+| POST | `/auth/verify-email` | Verify a user's email address |
+| POST | `/auth/resend-verification` | Resend the email verification link |
+| POST | `/auth/login` | Authenticate a user and return a JWT |
+| GET | `/auth/me` | Retrieve the authenticated user's profile |
+| POST | `/auth/logout` | Log out the authenticated user |
+| DELETE | `/auth/account` | Delete the authenticated user's account |
+| POST | `/auth/forgot-password` | Request a password reset email |
 
 ## Data & secrets
 
